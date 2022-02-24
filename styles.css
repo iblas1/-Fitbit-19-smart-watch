@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --blue: #565681;
+    --purple: #8a5362;
+    --black: #23211f;
+    --red: #ca3d22;
+    --pink: #e9c7be;
+}
+
+body{
+    padding-top: 3rem;
+    font-family: montserrat, Source-Sans-Pro;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+/* part1 */
+
+.watch-img{
+    height: 100%;
+    width: 100%;
+}
+.watch-div{
+    position: relative;
+}
+#time{
+    position: absolute;
+    color: whitesmoke;
+    top: 44%;
+    right: 38%;
+    font-size: 2rem;
+}
+
+.heart span{
+    position: absolute;
+    color: whitesmoke;
+    top: 50%;
+    right: 38%;
+    font-size: 2rem;
+}
+.heart img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 36%;
+    right: 43.5%;
+}
+/* part 2 */
+.part2{
+    margin-right: 18rem;
+}
+.fitbit{
+    font-size: 3rem;
+}
+.lorem{
+    max-width: 30%;
+    margin-top: 2rem;
+}
+.label{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.colors{
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+.color{
+    height: 2.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: 5px;
+}
+.color:hover{
+    height: 2.6rem;
+    width: 3.6rem;
+    cursor: pointer;
+}
+.black{
+    background-color: var(--black);
+}
+.red{
+    background-color: var(--red);
+}
+.purple{
+    background-color: var(--purple);
+}
+.brown{
+    background-color: var(--blue);
+}
+.pink{
+    background-color: var(--pink);
+}
+.features{
+    display: flex;
+    column-gap: 20px;
+}
+.feature{
+    background-color: rgb(235, 226, 226);
+    padding: 0.9rem 1.1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature2:hover{
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+}
+.feature1:hover{
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+}
+.buy{
+    background-color: rgb(255, 115, 0);
+    width: fit-content;
+    padding: 0.8rem 1.3rem;
+    border-radius: 5px;
+}
+.buy:hover{
+    padding: 0.9rem 1.4rem;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+    .part2{
+        margin-right: 0rem;
+    }
+}
